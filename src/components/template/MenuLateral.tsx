@@ -1,10 +1,10 @@
 import MenuItem from "./MenuItem";
-import { IconeCasa, IconeAjustes, IconeSino } from "../icons";
+import { IconeCasa, IconeAjustes, IconeSino, IconeSair } from "../icons";
 import Logo from "./Logo";
 
 export default function MenuLateral() {
   return (
-    <aside>
+    <aside className="flex flex-col">
       <div
         className={`
           flex flex-col items-center justify-center
@@ -14,10 +14,13 @@ export default function MenuLateral() {
       >
         <Logo />
       </div>
-      <ul>
+      <ul className="flex-grow">
         <MenuItem url="/" texto="Início" icone={IconeCasa} />
         <MenuItem url="/ajustes" texto="Ajustes" icone={IconeAjustes} />
         <MenuItem url="/notificacoes" texto="Notificações" icone={IconeSino} />
+      </ul>
+      <ul className="">
+        <MenuItem url="/notificacoes" texto="Sair" icone={IconeSair} />
       </ul>
     </aside>
   );
