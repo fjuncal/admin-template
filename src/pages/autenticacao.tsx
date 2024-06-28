@@ -21,7 +21,7 @@ export default function Autenticacao() {
   }
   return (
     <div className="flex h-screen items-center justify-center">
-      <div className={`hidden md:block md:w-1/2 lg:2/3`}>
+      <div className={``}>
         <Image
           src={euENat}
           alt="Imagem da Tela de Autenticação"
