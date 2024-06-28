@@ -3,12 +3,11 @@ import { createContext } from "react";
 type Tema = "dark" | "";
 
 interface AppContextProps {
-  tema: Tema;
+  tema?: Tema;
+  alternarTema?: () => void;
 }
 
-const AppContext = createContext<AppContextProps>({
-  tema: "",
-});
+const AppContext = createContext<AppContextProps>({});
 
 export function AppProvider(props: any) {
   return (
