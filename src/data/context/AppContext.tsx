@@ -1,14 +1,20 @@
 import { createContext } from "react";
 
-const AppContext = createContext({
-  nome: null,
+type Tema = "dark" | "";
+
+interface AppContextProps {
+  tema: Tema;
+}
+
+const AppContext = createContext<AppContextProps>({
+  tema: "",
 });
 
 export function AppProvider(props: any) {
   return (
     <AppContext.Provider
       value={{
-        nome: "Teste Context API",
+        tema: "dark",
       }}
     >
       {props.children}
