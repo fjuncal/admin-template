@@ -13,7 +13,7 @@ export default function MenuItem(props: MenuItemProps) {
     <li
       onClick={props.onClick}
       className={`
-    hover:bg-gray-300
+    hover:bg-gray-300 dark:hover:bg-gray-800
     cursor-pointer
     `}
     >
@@ -21,15 +21,12 @@ export default function MenuItem(props: MenuItemProps) {
         href={props.url!}
         className={`
         flex flex-col justify-center items-center
-        h-20 w-20 text-gray-600 ${props.className}`}
+        h-20 w-20 text-gray-600
+        dark:text-gray-200
+        ${props.className}`}
       >
         {props.icone}
-        <span
-          className={`
-          text-xs font-light `}
-        >
-          {props.texto}
-        </span>
+        <span className={`text-xs font-light `}>{props.texto}</span>
       </Link>
     </li>
   );
