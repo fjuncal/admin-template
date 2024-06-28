@@ -10,10 +10,12 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps) {
   return (
-    <div>
+    <div className={`flex`}>
       <MenuLateral />
-      <Cabecalho titulo={props.titulo} subtitulo={props.subtitulo} />
-      <Conteudo>{props.children}</Conteudo>
+      <div>
+        <Cabecalho titulo={props.titulo} subtitulo={props.subtitulo} />
+        <Conteudo>{props.children}</Conteudo>
+      </div>
     </div>
   );
 }
