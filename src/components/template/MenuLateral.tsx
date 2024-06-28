@@ -7,7 +7,7 @@ export default function MenuLateral() {
       <ul>
         <MenuItem url="/" texto="Início" icone={IconeCasa} />
         <MenuItem url="/ajustes" texto="Ajustes" icone={IconeAjustes} />
-        <MenuItem url="/novidades" texto="Novidades" icone={IconeSino} />
+        <MenuItem url="/novidades" texto="Notificações" icone={IconeSino} />
       </ul>
     </aside>
   );
