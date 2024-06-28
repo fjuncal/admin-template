@@ -1,8 +1,10 @@
 import MenuItem from "./MenuItem";
 import { IconeCasa, IconeAjustes, IconeSino, IconeSair } from "../icons";
 import Logo from "./Logo";
+import { useRouter } from "next/router";
 
 export default function MenuLateral() {
+  const router = useRouter();
   return (
     <aside
       className={`
@@ -28,7 +30,7 @@ export default function MenuLateral() {
       <ul className="">
         <MenuItem
           url="/"
-          onClick={() => console.log("Logout")}
+          onClick={() => router.push("/autenticacao")}
           texto="Sair"
           icone={IconeSair}
           className={`text-red-600 dark:text-red-400

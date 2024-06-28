@@ -1,9 +1,13 @@
 import AuthInput from "@/components/auth/AuthInput";
 import { useState } from "react";
-import foto from "../../assets/cachorro-botafogo.jpg";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import botafogoCachorro from "../../assets/cachorro-botafogo.jpg";
+import euENat from "../../assets/eu-natinha.jpeg";
 
 export default function Autenticacao() {
+  const router = useRouter();
+
   const [modo, setModo] = useState<"login" | "cadastro">("login");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -19,7 +23,7 @@ export default function Autenticacao() {
     <div className="flex h-screen items-center justify-center">
       <div className={`hidden md:block md:w-1/2 lg:2/3`}>
         <Image
-          src={foto}
+          src={euENat}
           alt="Imagem da Tela de Autenticação"
           className="h-screen w-full object-cover"
         />
@@ -31,7 +35,7 @@ export default function Autenticacao() {
         `}
         >
           {modo === "login"
-            ? "Entre com a sua conta"
+            ? "Bem vindo ao Nat Love S2"
             : "Cadastre-se na Plataforma"}
         </h1>
         <AuthInput
@@ -49,7 +53,7 @@ export default function Autenticacao() {
           obrigatorio
         />
         <button
-          onClick={submeter}
+          onClick={() => router.push("/")}
           className={`
         w-full bg-indigo-500 hover:bg-indigo-400 text-white rounded-lg px-4 py-3 mt-6`}
         >
