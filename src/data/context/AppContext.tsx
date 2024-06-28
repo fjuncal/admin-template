@@ -10,10 +10,14 @@ interface AppContextProps {
 const AppContext = createContext<AppContextProps>({});
 
 export function AppProvider(props: any) {
+  function alternarTema() {
+    console.log("alternarTema...");
+  }
   return (
     <AppContext.Provider
       value={{
         tema: "dark",
+        alternarTema,
       }}
     >
       {props.children}
