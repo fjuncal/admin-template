@@ -25,7 +25,7 @@ export default function BotaoAlternarTema(props: BotaoAlternarTemaProps) {
       </div>
       <div
         className={`
-            hidden lg:flex items-center ml-4 text-white
+            hidden lg:flex items-center ml-2 text-white
             `}
       >
         <span
