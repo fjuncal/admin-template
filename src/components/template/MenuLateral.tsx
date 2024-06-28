@@ -25,6 +25,7 @@ export default function MenuLateral() {
           onClick={() => console.log("Logout")}
           texto="Sair"
           icone={IconeSair}
+          className="text-red-600 hover:bg-text-red-700 hover:text-white"
         />
       </ul>
     </aside>

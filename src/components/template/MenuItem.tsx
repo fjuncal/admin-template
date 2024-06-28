@@ -4,6 +4,7 @@ interface MenuItemProps {
   url: string;
   texto: string;
   icone: any;
+  className?: string;
   onClick?: (event: any) => void;
 }
 
@@ -20,12 +21,12 @@ export default function MenuItem(props: MenuItemProps) {
         href={props.url!}
         className={`
         flex flex-col justify-center items-center
-        h-20 w-20`}
+        h-20 w-20 text-gray-600 ${props.className}`}
       >
         {props.icone}
         <span
           className={`
-          text-xs font-light text-gray-600`}
+          text-xs font-light `}
         >
           {props.texto}
         </span>
