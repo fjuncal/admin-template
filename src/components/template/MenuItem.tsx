@@ -4,17 +4,20 @@ interface MenuItemProps {
   url: string;
   texto: string;
   icone: any;
+  onClick?: (event: any) => void;
 }
 
 export default function MenuItem(props: MenuItemProps) {
   return (
     <li
+      onClick={props.onClick}
       className={`
     hover:bg-gray-300
+    cursor-pointer
     `}
     >
       <Link
-        href={props.url}
+        href={props.url!}
         className={`
         flex flex-col justify-center items-center
         h-20 w-20`}

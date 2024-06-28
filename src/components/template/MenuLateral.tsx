@@ -20,7 +20,12 @@ export default function MenuLateral() {
         <MenuItem url="/notificacoes" texto="Notificações" icone={IconeSino} />
       </ul>
       <ul className="">
-        <MenuItem url="/notificacoes" texto="Sair" icone={IconeSair} />
+        <MenuItem
+          url="/"
+          onClick={() => console.log("Logout")}
+          texto="Sair"
+          icone={IconeSair}
+        />
       </ul>
     </aside>
   );
