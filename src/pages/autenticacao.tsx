@@ -1,5 +1,7 @@
 import AuthInput from "@/components/auth/AuthInput";
 import { useState } from "react";
+import foto from "../../assets/cachorro-botafogo.jpg";
+import Image from "next/image";
 
 export default function Autenticacao() {
   const [modo, setModo] = useState<"login" | "cadastro">("login");
@@ -14,8 +16,15 @@ export default function Autenticacao() {
     }
   }
   return (
-    <div className="flex flex-col h-screen items-center justify-center">
-      <div className="w-1/2">
+    <div className="flex h-screen items-center justify-center">
+      <div className={`hidden md:block w-1/2`}>
+        <Image
+          src={foto}
+          alt="Imagem da Tela de Autenticação"
+          className="h-screen w-full object-cover"
+        />
+      </div>
+      <div className="m-10 w-1/2">
         <h1
           className={`
         text-xl font-bold mb-5
