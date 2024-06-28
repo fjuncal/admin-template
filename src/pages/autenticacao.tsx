@@ -2,6 +2,7 @@ import AuthInput from "@/components/auth/AuthInput";
 import { useState } from "react";
 
 export default function Autenticacao() {
+  const [modo, setModo] = useState<"login" | "cadastro">("login");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   return (
@@ -12,12 +13,21 @@ export default function Autenticacao() {
         tipo="email"
         valor={email}
         valorMudou={setEmail}
+        obrigatorio
       />
       <AuthInput
         label="Senha"
         tipo="password"
         valor={senha}
         valorMudou={setSenha}
+        obrigatorio
+      />
+      <AuthInput
+        label="Confirmação de senha"
+        tipo="password"
+        valor={senha}
+        valorMudou={setSenha}
+        obrigatorio
       />
     </div>
   );
