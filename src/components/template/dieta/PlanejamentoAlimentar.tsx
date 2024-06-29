@@ -13,9 +13,11 @@ export default function PlanejamentoAlimentar() {
               </div>
               <div className="w-9/12">
                 <span className="text-sm font-semibold block">
-                  Morning Standup
+                  Frango grelhado
                 </span>
-                <span className="text-sm">Zoom ID: 1134 11 1134</span>
+                <span className="text-sm">
+                  Salada de alface, tomate e pepino com azeite e limão
+                </span>
               </div>
             </div>
             <div className="flex mb-4">
