@@ -12,9 +12,7 @@ export default function PlanejamentoAlimentar() {
                 <span className="bg-blue-400 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
-                <span className="text-sm font-semibold block">
-                  Frango grelhado
-                </span>
+                <span className="text-sm  block">Frango grelhado</span>
               </div>
             </div>
             <div className="flex mb-2">
@@ -22,7 +20,7 @@ export default function PlanejamentoAlimentar() {
                 <span className="bg-red-400 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
-                <span className="text-sm font-semibold block">
+                <span className="text-sm  block">
                   Salada de alface, tomate e pepino com azeite e limão
                 </span>
                 {/* <span className="text-sm">Joey, Matt, CJ and Vlad</span> */}
@@ -33,9 +31,7 @@ export default function PlanejamentoAlimentar() {
                 <span className="bg-indigo-600 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
-                <span className="text-sm font-semibold block">
-                  Arroz integral
-                </span>
+                <span className="text-sm  block">Arroz integral</span>
               </div>
             </div>
           </div>
@@ -48,9 +44,7 @@ export default function PlanejamentoAlimentar() {
                 <span className="bg-blue-400 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
-                <span className="text-sm font-semibold block">
-                  Carne em cubos acebolada
-                </span>
+                <span className="text-sm block">Carne em cubos acebolada</span>
                 {/* <span className="text-sm">Zoom ID: 1134 11 1134</span> */}
               </div>
             </div>
@@ -59,9 +53,7 @@ export default function PlanejamentoAlimentar() {
                 <span className="bg-yellow-400 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
-                <span className="text-sm font-semibold block">
-                  Salada mesma do almoço
-                </span>
+                <span className="text-sm  block">Salada mesma do almoço</span>
               </div>
             </div>
             <div className="flex mb-4">
@@ -69,9 +61,7 @@ export default function PlanejamentoAlimentar() {
                 <span className="bg-black h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
-                <span className="text-sm font-semibold block">
-                  Purê de mandioquinha
-                </span>
+                <span className="text-sm  block">Purê de mandioquinha</span>
               </div>
             </div>
           </div>
