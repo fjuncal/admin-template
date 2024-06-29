@@ -1,3 +1,4 @@
+import AccordionCard from "@/components/template/AccordionCard";
 import Layout from "@/components/template/Layout";
 import { SelectButton } from "primereact/selectbutton";
 import { useState } from "react";
@@ -24,10 +25,11 @@ export default function Dieta() {
           onChange={(e) => setSize(e.value)}
           options={diasDaSemana}
           className={`flex justify-center items-center
-            text-sm
+            text-sm mb-5
             `}
         />
       </div>
+      <AccordionCard textoAlmoco="teste" textoJantar="teste" />
     </Layout>
   );
 }
