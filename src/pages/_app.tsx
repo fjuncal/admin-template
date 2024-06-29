@@ -7,7 +7,7 @@ import Tailwind from "primereact/passthrough/tailwind";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <PrimeReactProvider value={{ pt: Tailwind }}>
+    <PrimeReactProvider>
       <AppProvider>
         <Component {...pageProps} />
       </AppProvider>
