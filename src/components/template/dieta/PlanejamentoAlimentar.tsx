@@ -5,7 +5,7 @@ export default function PlanejamentoAlimentar() {
         <div className="bg-white rounded-lg w-2/3 lg:w-1/2 xl:w-1/3 p-4 shadow dark:text-gray-200 :bg-gray-800 dark:bg-gray-600">
           <div>
             <span className="text-gray-900 relative inline-block date uppercase font-medium tracking-widest">
-              Wednesday 8
+              Almoço
             </span>
             <div className="flex mb-2">
               <div className="w-1/12">
@@ -42,7 +42,7 @@ export default function PlanejamentoAlimentar() {
           </div>
           <div>
             <span className="text-gray-900 relative inline-block date uppercase font-medium tracking-widest">
-              Thursday 9
+              Jantar
             </span>
             <div className="flex mb-2">
               <div className="w-1/12">
