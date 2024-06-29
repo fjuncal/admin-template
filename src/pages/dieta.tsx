@@ -4,13 +4,13 @@ import { useState } from "react";
 
 export default function Dieta() {
   const [diasDaSemana] = useState([
-    { label: "Segunda", value: "segunda" },
-    { label: "Terça", value: "terca" },
-    { label: "Quarta", value: "quarta" },
-    { label: "Quinta", value: "quinta" },
-    { label: "Sexta", value: "sexta" },
-    { label: "Sábado", value: "sabado" },
-    { label: "Domingo", value: "domingo" },
+    { label: "Seg", value: "segunda" },
+    { label: "Ter", value: "terca" },
+    { label: "Qua", value: "quarta" },
+    { label: "Qui", value: "quinta" },
+    { label: "Sex", value: "sexta" },
+    { label: "Sáb", value: "sabado" },
+    { label: "Dom", value: "domingo" },
   ]);
   const [size, setSize] = useState(diasDaSemana[1].value);
   return (
