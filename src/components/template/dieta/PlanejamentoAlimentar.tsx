@@ -7,7 +7,7 @@ export default function PlanejamentoAlimentar() {
             <span className="text-gray-900 relative inline-block date uppercase font-medium tracking-widest">
               Almoço
             </span>
-            <div className="flex mb-2">
+            <div className="flex mb-2 mt-2">
               <div className="w-1/12">
                 <span className="bg-blue-400 h-2 w-2 rounded-full block mt-2"></span>
               </div>
@@ -15,29 +15,26 @@ export default function PlanejamentoAlimentar() {
                 <span className="text-sm font-semibold block">
                   Frango grelhado
                 </span>
-                <span className="text-sm">
-                  Salada de alface, tomate e pepino com azeite e limão
-                </span>
               </div>
             </div>
-            <div className="flex mb-4">
+            <div className="flex mb-2">
               <div className="w-1/12">
                 <span className="bg-red-400 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
                 <span className="text-sm font-semibold block">
-                  Core Development
+                  Salada de alface, tomate e pepino com azeite e limão
                 </span>
-                <span className="text-sm">Joey, Matt, CJ and Vlad</span>
+                {/* <span className="text-sm">Joey, Matt, CJ and Vlad</span> */}
               </div>
             </div>
-            <div className="flex mb-4">
+            <div className="flex mb-2">
               <div className="w-1/12">
                 <span className="bg-indigo-600 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
                 <span className="text-sm font-semibold block">
-                  Interview with Ed Harris
+                  Arroz integral
                 </span>
               </div>
             </div>
@@ -46,24 +43,34 @@ export default function PlanejamentoAlimentar() {
             <span className="text-gray-900 relative inline-block date uppercase font-medium tracking-widest">
               Jantar
             </span>
-            <div className="flex mb-2">
+            <div className="flex mb-2 mt-2">
               <div className="w-1/12">
                 <span className="bg-blue-400 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
                 <span className="text-sm font-semibold block">
-                  Morning Standup
+                  Carne em cubos acebolada
                 </span>
-                <span className="text-sm">Zoom ID: 1134 11 1134</span>
+                {/* <span className="text-sm">Zoom ID: 1134 11 1134</span> */}
               </div>
             </div>
-            <div className="flex mb-4">
+            <div className="flex mb-2">
               <div className="w-1/12">
                 <span className="bg-yellow-400 h-2 w-2 rounded-full block mt-2"></span>
               </div>
               <div className="w-9/12">
                 <span className="text-sm font-semibold block">
-                  Dinner with Mom
+                  Salada mesma do almoço
+                </span>
+              </div>
+            </div>
+            <div className="flex mb-4">
+              <div className="w-1/12">
+                <span className="bg-black h-2 w-2 rounded-full block mt-2"></span>
+              </div>
+              <div className="w-9/12">
+                <span className="text-sm font-semibold block">
+                  Purê de mandioquinha
                 </span>
               </div>
             </div>
