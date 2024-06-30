@@ -1,4 +1,6 @@
-export default function PlanejamentoAlimentar() {
+export default function PlanejamentoAlimentar({ diaDaSemana }: any) {
+  console.log(diaDaSemana);
+
   return (
     <div>
       <div className="flex justify-center p-8 mt-8 ">
