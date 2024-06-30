@@ -24,7 +24,7 @@ export default function PlanejamentoAlimentar(
     return diaDaSemana.jantar.map((alimento: string) => (
       <div className="flex mb-2 mt-2">
         <div className="w-1/12">
-          <span className="bg-blue-400 h-2 w-2 rounded-full block mt-2"></span>
+          <span className="bg-yellow-400 h-2 w-2 rounded-full block mt-2"></span>
         </div>
         <div className="w-9/12">
           <span className="text-sm  block">{alimento}</span>
