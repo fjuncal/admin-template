@@ -6,7 +6,6 @@ export default function PlanejamentoAlimentar(
   props: PlanejamentoAlimentarProps
 ) {
   const diaDaSemana = props.diaDaSemana;
-  console.log(diaDaSemana.almoco.length);
 
   function renderizarAlmoco() {
     return diaDaSemana.almoco.map((alimento: string) => (
@@ -37,7 +36,7 @@ export default function PlanejamentoAlimentar(
     <div>
       {diaDaSemana.almoco.length > 0 && diaDaSemana.jantar.length > 0 ? (
         <div className="flex justify-center p-8 mt-8 ">
-          <div className="bg-white rounded-lg w-2/3 lg:w-1/2 xl:w-1/3 p-4 shadow dark:text-gray-200 :bg-gray-800 dark:bg-gray-600">
+          <div className="bg-white rounded-lg w-screen lg:w-1/2 xl:w-1/3 p-4 shadow dark:text-gray-200 :bg-gray-800 dark:bg-gray-600">
             <div>
               <span className="text-gray-900 font-semibold relative inline-block date uppercase tracking-widest">
                 Almoço
