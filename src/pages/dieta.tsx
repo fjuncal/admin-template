@@ -1,9 +1,6 @@
 import BotoesDiasDeSemana from "@/components/template/dieta/BotoesDiasDeSemana";
 import PlanejamentoAlimentar from "@/components/template/dieta/PlanejamentoAlimentar";
-import {
-  DietaService,
-  getDietaDataPeloDiaDaSemana,
-} from "@/components/template/dieta/service/DietaService";
+import { getDietaDataPeloDiaDaSemana } from "@/components/template/dieta/service/DietaService";
 import Layout from "@/components/template/Layout";
 import { useState } from "react";
 

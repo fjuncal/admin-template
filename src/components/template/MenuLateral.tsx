@@ -5,6 +5,7 @@ import {
   IconeSino,
   IconeSair,
   IconeDieta,
+  IconeParar,
 } from "../icons";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
@@ -33,6 +34,7 @@ export default function MenuLateral() {
         <MenuItem url="/ajustes" texto="Ajustes" icone={IconeAjustes} />
         <MenuItem url="/notificacoes" texto="Notificações" icone={IconeSino} />
         <MenuItem url="/dieta" texto="Dieta" icone={IconeDieta} />
+        <MenuItem url="/diasSemDoce" texto="Sem açúcar" icone={IconeParar} />
       </ul>
       <ul className="">
         <MenuItem
